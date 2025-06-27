@@ -6,6 +6,11 @@ import json
 import base64
 from typing import Optional, Dict, Any, List
 from pathlib import Path
+from dotenv import load_dotenv 
+import os
+load_dotenv()
+
+print(os.getenv("OPENAI_API_KEY"))
 
 
 # Create an MCP server
